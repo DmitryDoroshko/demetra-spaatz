@@ -1,0 +1,29 @@
+.btn {
+  padding: 1.6rem 3.1rem;
+  border-radius: 1.7rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &--white:link, &--white:visited {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  &--dark:link, &--dark:visited {
+    color: $color-white;
+    background-color: $color-black;
+  }
+}
+
+.heading-1 {
+  font-weight: 700;
+  font-family: $font-main;
+  font-size: 8rem;
+  &--highlighted {
+    color: $color-blue-2;
+  }
+}

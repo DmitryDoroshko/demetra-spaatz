@@ -1,13 +1,4 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "base";
+@import "components";
+@import "header";
 
-html {
-  font-size: 62.5%; // 1 rem = 10px
-}
-
-body {
-  box-sizing: border-box;
-}

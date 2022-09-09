@@ -1,0 +1,27 @@
+$font-main: 'Open Sans', sans-serif;
+
+$color-black: #1B2534;
+$color-blue: #0082F3;
+$color-blue-2: #29A0F5;
+$color-white: #fff;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+.container {
+  width: 100%;
+  max-width: 134rem;
+  margin: 0 auto;
+}
