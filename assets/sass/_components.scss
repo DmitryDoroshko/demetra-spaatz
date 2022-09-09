@@ -1,3 +1,9 @@
+%heading {
+  font-weight: 700;
+  font-family: $font-main;
+  text-transform: capitalize;
+}
+
 .btn {
   padding: 1.6rem 3.1rem;
   border-radius: 1.7rem;
@@ -17,11 +23,16 @@
     color: $color-white;
     background-color: $color-black;
   }
+
+  &--blue:link, &--blue:visited {
+    background-color: $color-blue-2;
+    color: $color-white;
+  }
+
 }
 
 .heading-1 {
-  font-weight: 700;
-  font-family: $font-main;
+  @extend %heading;
   font-size: 8rem;
   &--highlighted {
     color: $color-blue-2;
@@ -29,8 +40,7 @@
 }
 
 .heading-2 {
-  font-weight: 700;
-  font-family: $font-main;
+  @extend %heading;
   font-size: 6.5rem;
   &--highlighted {
     color: $color-blue-2;
@@ -42,4 +52,13 @@
   font-size: 3rem;
   line-height: 4.2rem;
   font-family: $font-main;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
 }
+
