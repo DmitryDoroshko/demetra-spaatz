@@ -27,3 +27,19 @@
     color: $color-blue-2;
   }
 }
+
+.heading-2 {
+  font-weight: 700;
+  font-family: $font-main;
+  font-size: 6.5rem;
+  &--highlighted {
+    color: $color-blue-2;
+  }
+}
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4.2rem;
+  font-family: $font-main;
+}
