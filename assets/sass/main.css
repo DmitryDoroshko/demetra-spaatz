@@ -212,6 +212,105 @@ body {
   width: 100%;
 }
 
+.loved-by {
+  padding: 15.9rem 3rem 17rem;
+  color: #1B2534;
+}
+.loved-by__heading {
+  font-size: 3rem;
+  line-height: 4.2rem;
+  text-align: center;
+  color: inherit;
+}
+.loved-by__brands {
+  margin-top: 10.7rem;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+}
+.loved-by__brand-img {
+  object-fit: contain;
+}
+.loved-by__items {
+  margin-top: 21rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42.3rem, 1fr));
+  margin-bottom: 8.5rem;
+  gap: 3rem;
+  justify-items: center;
+  justify-content: center;
+}
+.loved-by__item {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.loved-by__picture {
+  width: 100%;
+}
+.loved-by__item-heading {
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+  font-weight: 700;
+  max-width: 34.4rem;
+}
+.loved-by__text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  max-width: 41.6rem;
+}
+.loved-by__person-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.loved-by__person-img {
+  width: 100%;
+  max-width: 6.6rem;
+}
+.loved-by__person-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loved-by__person-name {
+  color: inherit;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.loved-by__person-description {
+  display: flex;
+  gap: 2.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.loved-by__person-date {
+  position: relative;
+}
+.loved-by__person-date::after {
+  content: "";
+  display: inline-block;
+  background-color: #29A0F5;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  right: -1.25rem;
+  top: 50%;
+}
+.loved-by__btn-container {
+  display: block;
+  text-align: center;
+}
+.loved-by__btn {
+  display: inline-block;
+}
+
 .software {
   padding-top: 52.5rem;
   padding-bottom: 16rem;

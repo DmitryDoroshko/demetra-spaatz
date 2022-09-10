@@ -1,0 +1,121 @@
+.loved-by {
+  padding: 15.9rem 3rem 17rem;
+  color: #1B2534;
+
+  &__heading {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: inherit;
+  }
+
+  &__brands {
+    margin-top: 10.7rem;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  &__brand-img {
+    object-fit: contain;
+  }
+
+  &__items {
+    margin-top: 21rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(42.3rem, 1fr));
+    margin-bottom: 8.5rem;
+    gap: 3rem;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__img-big {
+  }
+
+  &__item-heading {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    max-width: 34.4rem;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    max-width: 41.6rem;
+  }
+
+  &__person-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__person-img {
+    width: 100%;
+    max-width: 6.6rem;
+  }
+
+  &__person-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  &__person-name {
+    color: inherit;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  &__person-description {
+    display: flex;
+    gap: 2.5rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  &__person-date {
+    position: relative;
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: #29A0F5;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      position: absolute;
+      right: -1.25rem;
+      top: 50%;
+    }
+  }
+
+  &__person-category {
+  }
+
+  &__btn-container {
+    display: block;
+    text-align: center;
+  }
+
+  &__btn {
+    display: inline-block;
+  }
+}
+
