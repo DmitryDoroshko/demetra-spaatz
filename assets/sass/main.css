@@ -54,12 +54,18 @@ body {
 .heading-1--highlighted {
   color: #29A0F5;
 }
+.heading-1--centered {
+  text-align: center;
+}
 
 .heading-2 {
   font-size: 6.5rem;
 }
 .heading-2--highlighted {
   color: #29A0F5;
+}
+.heading-2--centered {
+  text-align: center;
 }
 
 .heading-3 {
@@ -73,6 +79,23 @@ body {
 }
 .heading-3--bold {
   font-weight: 700;
+}
+.heading-3--centered {
+  text-align: center;
+}
+
+.heading-4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  color: #ABABAB;
+}
+.heading-4--centered {
+  text-align: center;
+}
+.heading-4.active {
+  color: #fff;
 }
 
 .header {
@@ -188,6 +211,52 @@ body {
   width: 100%;
 }
 
+.software-description {
+  padding: 13.5rem 0 19.3rem;
+}
+.software-description__content {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  align-items: center;
+}
+.software-description__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.software-description__text-item {
+  flex: 35%;
+  transition: all 0.2s;
+}
+.software-description__text-item:hover, .software-description__text-item.active {
+  padding: 3.9rem 4.5rem 4.9rem 4rem;
+  border-radius: 2rem;
+  color: #fff !important;
+  background-color: #1B2534;
+}
+.software-description__text-item:hover > h4, .software-description__text-item.active > h4 {
+  color: #fff;
+}
+.software-description__heading {
+  color: #ABABAB;
+}
+.software-description__text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 37.4rem;
+  color: #ABABAB;
+}
+.software-description__right {
+  flex: 64%;
+  height: 100%;
+}
+.software-description__img {
+  width: 100%;
+}
+
 .work {
   background-color: #F6F6F6;
   padding: 17.5rem 5rem;
@@ -277,6 +346,9 @@ body {
   max-width: 20.3rem;
 }
 .work__support-img {
+  object-fit: cover;
+  height: 100%;
+  max-height: 21rem;
   width: 100%;
   max-width: 36.1rem;
 }
@@ -286,6 +358,13 @@ body {
   background-color: #fff;
   border-radius: 2rem;
   padding: 2rem 6.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work__monitor-img {
+  width: 100%;
 }
 .work__watch {
   grid-column: 1/6;

@@ -37,6 +37,10 @@
   &--highlighted {
     color: $color-blue-2;
   }
+
+  &--centered {
+    text-align: center;
+  }
 }
 
 .heading-2 {
@@ -44,6 +48,10 @@
   font-size: 6.5rem;
   &--highlighted {
     color: $color-blue-2;
+  }
+
+  &--centered {
+    text-align: center;
   }
 }
 
@@ -59,6 +67,26 @@
 
   &--bold {
     font-weight: 700;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+.heading-4 {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  color: #ABABAB;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &.active {
+    color: $color-white;
   }
 }
 
