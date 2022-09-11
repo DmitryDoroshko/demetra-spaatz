@@ -18,6 +18,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @media only screen and (max-width: $breakpoint-large) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+      padding-left: 3rem;
+    }
   }
 
   &__logo {
@@ -27,6 +33,9 @@
   }
 
   &__nav {
+    @media only screen and (max-width: $breakpoint-large) {
+      display: none;
+    }
   }
 
   &__list {
@@ -34,6 +43,9 @@
     list-style: none;
     gap: 6rem;
     align-items: center;
+    @media only screen and (max-width: $breakpoint-largest) {
+      gap: 3rem;
+    }
   }
 
   &__item {

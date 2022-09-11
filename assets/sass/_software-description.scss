@@ -10,6 +10,15 @@
     justify-content: space-between;
     gap: 1%;
     align-items: center;
+
+    @media only screen and (max-width: $breakpoint-largest) {
+      padding: 0 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 
   &__left {
@@ -21,6 +30,7 @@
   &__text-item {
     flex: 35%;
     transition: all .2s;
+
     &:hover, &.active {
       & > h4 {
         color: $color-white;
@@ -47,6 +57,10 @@
   &__right {
     flex: 64%;
     height: 100%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      width: 75%;
+    }
   }
 
   &__img {
