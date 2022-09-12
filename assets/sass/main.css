@@ -462,6 +462,9 @@ body {
 .loved-by__picture {
   width: 100%;
 }
+.loved-by__img-big {
+  width: 100%;
+}
 .loved-by__item-heading {
   font-size: 3.5rem;
   line-height: 4.2rem;
