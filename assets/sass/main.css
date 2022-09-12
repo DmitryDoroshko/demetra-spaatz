@@ -706,17 +706,6 @@ body {
     padding-top: 45rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
-  .software {
-    padding-top: 15rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .software {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
 .software__inner {
   display: flex;
   flex-wrap: wrap;
