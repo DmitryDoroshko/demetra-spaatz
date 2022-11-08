@@ -52,6 +52,10 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    @media only screen and (max-width: $breakpoint-large) {
+      margin-top: 2rem;
+    }
   }
 
   &__icon-link {
@@ -152,6 +156,13 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: .36px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+
   }
 
   &__copy {
@@ -159,16 +170,24 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: .36px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      order: 2;
+    }
   }
 
   &__nav {
     display: flex;
     justify-content: space-between;
     gap: 4.7rem;
+    @media only screen and (max-width: $breakpoint-medium) {
+      order: 1;
+    }
   }
 
   &__nav-item {
     position: relative;
+
     &:not(:first-child)::before {
       content: "/";
       display: inline-block;
