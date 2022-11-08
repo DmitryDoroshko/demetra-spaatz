@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 
-
     grid-template-rows: minmax(38rem, max-content) 24.4rem minmax(27.2rem, max-content);
     grid-column-gap: 1.6rem;
     grid-row-gap: 4.3rem;
@@ -20,7 +19,11 @@
     }
 
     @media only screen and (max-width: $breakpoint-medium) {
-      grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) minmax(24.4rem, max-content) minmax(27.2rem, max-content);
+      grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) repeat(3, minmax(24.4rem, max-content)) minmax(27.2rem, max-content);
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) repeat(3, minmax(24.4rem, max-content)) repeat(2, minmax(27.2rem, max-content));
     }
   }
 
@@ -111,6 +114,15 @@
       grid-row: 3 / 4;
     }
 
+    @media only screen and (max-width: $breakpoint-medium) {
+      grid-column: 3 / span 4;
+      grid-row: 3 / 4;
+      padding: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      padding: 1rem;
+    }
   }
 
   &__tools-heading {
@@ -121,17 +133,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    @media only screen and (max-width: $breakpoint-medium) {
-      flex-direction: column;
-      align-items: center;
-    }
-
   }
 
   &__tools-img {
     @media only screen and (max-width: $breakpoint-medium) {
       width: 50%;
+    }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      width: 33.3333%;
     }
   }
 
@@ -149,6 +159,7 @@
 
     @media only screen and (max-width: $breakpoint-medium) {
       flex-direction: column;
+      grid-row: 4 / 5;
     }
   }
 
@@ -179,6 +190,11 @@
       grid-row: 3 / 4;
       padding: 1rem;
     }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      grid-row: 5 / 6;
+      grid-column: 3 / span 4;
+    }
   }
 
   &__monitor-img {
@@ -200,10 +216,16 @@
     }
 
     @media only screen and (max-width: $breakpoint-medium) {
+      grid-row: 6 / -1;
       justify-content: flex-start;
       gap: 3rem;
       flex-direction: column;
       align-items: center;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      grid-row: 6 / span 1;
+      grid-column: 3 / span 4;
     }
   }
 
@@ -214,7 +236,7 @@
     @media only screen and (max-width: $breakpoint-largest) {
       max-width: 40rem;
     }
-   }
+  }
 
   &__watch-img {
     width: 100%;
@@ -248,6 +270,14 @@
 
     @media only screen and (max-width: $breakpoint-largest) {
       grid-row: 4 / -1;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      grid-row: -2 / -1;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      grid-column: 3 / span 4;
     }
   }
 

@@ -854,7 +854,12 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .work__inner {
-    grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) minmax(24.4rem, max-content) minmax(27.2rem, max-content);
+    grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) repeat(3, minmax(24.4rem, max-content)) minmax(27.2rem, max-content);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .work__inner {
+    grid-template-rows: minmax(38rem, max-content) minmax(38rem, max-content) repeat(3, minmax(24.4rem, max-content)) repeat(2, minmax(27.2rem, max-content));
   }
 }
 .work__leads {
@@ -941,6 +946,18 @@ body {
     grid-row: 3/4;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .work__tools {
+    grid-column: 3/span 4;
+    grid-row: 3/4;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .work__tools {
+    padding: 1rem;
+  }
+}
 .work__tools-heading {
   max-width: 18.1rem;
 }
@@ -950,14 +967,13 @@ body {
   justify-content: space-between;
 }
 @media only screen and (max-width: 56.25em) {
-  .work__tools-items {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 56.25em) {
   .work__tools-img {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .work__tools-img {
+    width: 33.3333%;
   }
 }
 .work__support {
@@ -976,6 +992,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .work__support {
     flex-direction: column;
+    grid-row: 4/5;
   }
 }
 .work__support-heading {
@@ -1005,6 +1022,12 @@ body {
     padding: 1rem;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .work__monitor {
+    grid-row: 5/6;
+    grid-column: 3/span 4;
+  }
+}
 .work__monitor-img {
   width: 100%;
 }
@@ -1027,10 +1050,17 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .work__watch {
+    grid-row: 6/-1;
     justify-content: flex-start;
     gap: 3rem;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .work__watch {
+    grid-row: 6/span 1;
+    grid-column: 3/span 4;
   }
 }
 .work__watch-picture {
@@ -1069,6 +1099,16 @@ body {
 @media only screen and (max-width: 75em) {
   .work__image-support {
     grid-row: 4/-1;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .work__image-support {
+    grid-row: -2/-1;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .work__image-support {
+    grid-column: 3/span 4;
   }
 }
 .work__image-support-icons {
