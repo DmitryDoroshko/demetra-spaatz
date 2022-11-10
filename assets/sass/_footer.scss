@@ -5,6 +5,7 @@
 
   &__inner {
     width: 100%;
+    padding: 3rem;
   }
 
   &__main-row {
@@ -93,9 +94,15 @@
     row-gap: 1.7rem;
     column-gap: 7vw;
 
+    @media only screen and (min-width: $breakpoint-big-desktop) {
+      column-gap: 5rem;
+    }
+
+
     @media only screen and (max-width: $breakpoint-medium) {
       column-gap: 3vw;
     }
+
   }
 
   &__item {

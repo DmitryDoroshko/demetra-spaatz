@@ -189,6 +189,7 @@ body {
 }
 .footer__inner {
   width: 100%;
+  padding: 3rem;
 }
 .footer__main-row {
   display: flex;
@@ -270,6 +271,11 @@ body {
   grid-template-rows: min-content;
   row-gap: 1.7rem;
   column-gap: 7vw;
+}
+@media only screen and (min-width: 125em) {
+  .footer__items {
+    column-gap: 5rem;
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .footer__items {
